@@ -60,15 +60,15 @@ jobs:
       with:
         #registry: ghcr.io
         registry: docker.io
-        #username: '${{ github.repository_owner }}'
-        username: 'seyiogunniran'
+        # username: '${{ github.repository_owner }}'
+        username: 'fredduoduoffei'
         # password: '${{ secrets.GITHUB_TOKEN }}'
         password: '${{ secrets.DOCKER_HUB_ACCESS_TOKEN }}'
     - uses: docker/build-push-action@v4
       with:
         context: .
         push: true
-        tags: 'docker.io/seyiogunniran/solar-system:${{ github.sha }}'
+        tags: 'docker.io/fredduoduoffei/solar-system:${{ github.sha }}'
         #tags: 'ghcr.io/${{ github.repository_owner }}/solar-system:${{ github.sha }}'
 
   dev-deploy:
