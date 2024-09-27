@@ -48,8 +48,8 @@ jobs:
           path: coverage
           retention-days: 5
   docker:
-    permissions: #added
-      packages: write #added
+    permissions: 
+      packages: write 
     runs-on: ubuntu-latest
     needs:
     #- code-coverage
